@@ -1,0 +1,101 @@
+body {
+    
+    background-color: black;
+}
+.youlose {
+    height: 42rem;
+    width: 35rem;
+animation: fadeOut 2s;
+-webkit-animation: fadeOut 2s;
+-moz-animation: fadeOut 2s;
+-o-animation: fadeOut 2s;
+-ms-animation: fadeOut 2s;
+animation-fill-mode: forwards;
+animation-delay: 2s;
+}
+@keyframes fadeOut {
+0% {
+  opacity:1;
+}
+100% {
+  opacity:0;
+}
+}
+
+@-moz-keyframes fadeOut {
+0% {
+  opacity:1;
+}
+100% {
+  opacity:0;
+}
+}
+
+@-webkit-keyframes fadeOut {
+0% {
+  opacity:1;
+}
+100% {
+  opacity:0;
+}
+}
+
+@-o-keyframes fadeOut {
+0% {
+  opacity:1;
+}
+100% {
+  opacity:0;
+}
+}
+
+@-ms-keyframes fadeOut {
+0% {
+  opacity:1;
+}
+100% {
+  opacity:0;
+}
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    animation: fadeinLoad 0s 4s forwards;
+    opacity: 0;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: -50%;
+}
+    @keyframes fadeinLoad {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+.button {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    animation: fadeinLoad 0s 4s forwards;
+    opacity: 0;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: -60%;
+}
+    @keyframes fadeinLoad {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}

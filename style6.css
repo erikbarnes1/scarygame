@@ -1,0 +1,28 @@
+* {
+
+    color: whitesmoke;
+    text-align: center;
+}
+body {
+    background-color: black;
+}
+.large {
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.medium {
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.button {
+    background-color: rgb(10, 82, 226);
+    color: white;
+    border-radius: 5%;
+    font-size: 4rem;
+    padding: 1%;
+    border-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    width: 11rem;
+    text-decoration: none;
+    
+}

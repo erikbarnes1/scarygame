@@ -1,0 +1,197 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-image: url(https://images.pond5.com/dark-creepy-hallway-door-opens-footage-073547012_prevstill.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.homepageContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.homepageMessage {
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+}
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+.homepageButton {
+    color: #009688;
+    background: #fff;
+    border: 1px solid #009688;
+    font-size: 17px;
+    padding: 7px 12px;
+    font-weight: normal;
+    margin: 6px 0;
+    margin-right: 12px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 120px;
+}
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+
+body {
+	display: grid;
+	place-content: center;
+	height: 100vh;
+	background-color: #0d324d;
+	font-family: "Merriweather", serif;
+}
+
+div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	> * + * {
+		margin-top: 4rem;
+	}
+}
+
+a {
+	padding: 1rem 2rem;
+	font-size: 1.25rem;
+	position: relative;
+	border: 2px solid white;
+	color: white;
+	background-color: transparent;
+	text-align: center;
+}
+
+.border {
+	&::after,
+	&::before,
+	span::after,
+	span::before {
+		content: "";
+		position: absolute;
+		background-color: white;
+		transition: 0.5s ease;
+	}
+
+	&::after,
+	&::before {
+		height: 100%;
+		width: 2px;
+		top: -2px;
+	}
+
+	&::after {
+		left: -2px;
+	}
+
+	&::before {
+		right: -2px;
+	}
+
+	span::after,
+	span::before {
+		height: 2px;
+		width: 100%;
+		left: -2px;
+	}
+	span::after {
+		top: -2px;
+	}
+
+	span::before {
+		bottom: -2px;
+	}
+
+	&:hover:after {
+		transform: translatex(-12px);
+	}
+
+	&:hover:before {
+		transform: translatex(12px);
+	}
+
+	&:hover span::after {
+		transform: translatey(-12px);
+	}
+
+	&:hover span::before {
+		transform: translatey(12px);
+	}
+}
+
+.swap {
+	span {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 1rem 2rem;
+		box-sizing: border-box;
+		opacity: 0;
+		color: black;
+		transition: 0.35s ease;
+	}
+
+	&::before {
+		content: "";
+		left: 0;
+		top: 0;
+		position: absolute;
+		width: 0;
+		height: 100%;
+		background-color: white;
+		transition: 0.5s ease;
+	}
+
+	&:hover {
+		&:before {
+			width: 100%;
+		}
+
+		span {
+			opacity: 1;
+		}
+	}
+}
+
+.future {
+	&::after,
+	&::before {
+		content: "";
+		position: absolute;
+		border: 2px solid white;
+		width: calc(100% + 15px);
+		height: 60px;
+		transition: 0.5s ease;
+	}
+
+	&::after {
+		top: -15px;
+		left: -15px;
+		border-right: none;
+		border-bottom: none;
+	}
+
+	&::before {
+		bottom: -15px;
+		right: -15px;
+		border-left: none;
+		border-top: none;
+	}
+
+	&:hover:after,
+	&:hover:before {
+		width: calc(100% - 30px);
+		height: 80px;
+	}
+}

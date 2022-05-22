@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+}
+p {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    animation: fadeinLoad 2s 2s forwards;
+    opacity: 0;
+    margin-top: 15%;
+}
+    @keyframes fadeinLoad {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity:0.7;
+        }
+    }
+.doorContainer {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    animation: fadeinLoad 2s 2s forwards;
+    opacity: 0;
+   
+}
+    @keyframes fadeinLoad {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity:1;
+        }
+    }
